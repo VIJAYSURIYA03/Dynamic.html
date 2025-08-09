@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Javascript</title>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Color change</h2>
+        <button onclick="changeColor()">click Me</button>
+        <script>
+            function changeColor(){
+                let colors=["red","purple","violet","sky blue","green","orange"];
+                let random=Math.floor(Math.random() * colors.length);
+                document.body.style.backgroundColor=colors[random];
+
+            }
+        </script>
+    </body>
+</html>
